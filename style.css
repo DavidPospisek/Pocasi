@@ -1,0 +1,137 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('https://wallpapers.com/images/featured/world-background-fko9gier1t01q6m8.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: blue;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.app-container {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  padding: 25px;
+  width: 85%;
+  max-width: 850px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+
+
+h1,
+h2 {
+  color: #333;
+  font-weight: 600;
+}
+
+.search-container {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+  align-items: center;
+}
+
+#city-input {
+  flex: 1;
+  padding: 15px;
+  border: 2px solid #007BFF;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+#search-btn {
+  padding: 15px 30px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#search-btn:hover {
+  background-color: #0056b3;
+}
+
+.weather-container img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.weather-container p {
+  margin: 15px 0;
+  font-size: 18px;
+}
+
+.favorites-container h2,
+.search-history-container h2 {
+  margin-bottom: 15px;
+}
+
+#favorites-list,
+#search-history-list {
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+}
+
+#favorites-list li,
+#search-history-list li {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+#favorites-list li:last-child,
+#search-history-list li:last-child {
+  border-bottom: none;
+}
+
+button {
+  background-color: #FFC107;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e0a800;
+}
+
+#clear-history-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-size: 16px;
+}
+
+#clear-history-btn:hover {
+  background-color: #c82333;
+}
+
+footer {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;  
+  color: #999;
+}
